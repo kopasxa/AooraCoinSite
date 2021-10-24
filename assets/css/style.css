@@ -1,0 +1,276 @@
+/** INCLUDES **/
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Black.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RocGrotesk";
+  src: url("../fonts/Roc Grotesk ExtraWide Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RocGrotesk";
+  src: url("../fonts/Roc Grotesk ExtraWide Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProBlack.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProMedium.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProRegular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SofiaProSemi";
+  src: url("../fonts/SofiaProSemiBold.ttf");
+  font-weight: 700;
+}
+
+/** VARIABLES **/
+/** GLOBAL **/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #F5F5F5;
+  background: #000000;
+  font-family: "SofiaPro";
+}
+
+.container {
+  width: 95%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.linear-gradient-text {
+  background: linear-gradient(157deg, #fa4aff 40%, #01efff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circleLinear {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(74.11% 74.11% at 74.82% 25.89%, #01F0FF 0%, #FA4AFF 100%);
+  position: absolute;
+  z-index: -1;
+}
+
+.linear-gradient {
+  background: -webkit-gradient(linear, right top, left top, color-stop(15.58%, #00EFFF), color-stop(74.85%, #FA4AFF));
+  background: linear-gradient(270deg, #00EFFF 15.58%, #FA4AFF 74.85%);
+  border-radius: 20px;
+}
+
+.done {
+  z-index: 1000;
+  position: fixed;
+}
+
+.loader {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Arial";
+}
+
+.loader h1 {
+  font-size: 120px;
+  margin: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+hr {
+  border: none;
+}
+
+/** MAIN **/
+header .logo .logoName a {
+  color: #F5F5F5;
+  font-family: "RocGrotesk";
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header .menu .listMenu {
+  list-style: none;
+}
+
+header .menu .listMenu .menuItem {
+  font-size: 18px;
+  font-family: "SofiaPro";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 3em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .container {
+  width: 70%;
+}
+
+main #firstScreen .title {
+  margin: 90px 0;
+  font-size: 96px;
+  font-family: "RocGrotesk";
+  font-weight: 600;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+main #firstScreen img {
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+main #secondScreen {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1.46%, #C4C4C4), color-stop(40%, rgba(196, 196, 196, 0)));
+  background: linear-gradient(360deg, #C4C4C4 -1.46%, rgba(196, 196, 196, 0) 40%);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main #secondScreen .container {
+  width: 83%;
+  margin-right: 7%;
+}
+
+main #secondScreen hr {
+  width: 100%;
+  height: 17px;
+}
+
+main #secondScreen .mainHeader {
+  padding-bottom: 25px;
+}
+
+main #secondScreen .mainHeader h2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "SofiaPro";
+  font-size: 36px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
+}
+
+main #secondScreen .mainHeader h1 {
+  font-family: "RocGrotesk";
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+main #secondScreen .mainHeader hr {
+  width: 1100px;
+  height: 32px;
+  position: absolute;
+  left: -20px;
+}
+
+main #secondScreen main .card {
+  background: rgba(181, 181, 181, 0.09);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 36px;
+  padding: 94px 67px;
+  position: relative;
+  max-width: 630px;
+  z-index: 2;
+}
+
+main #secondScreen main .card header h2 {
+  font-size: 30px;
+  font-family: 'ProximaNova';
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 0;
+}
+
+main #secondScreen main .card header hr {
+  width: 234px;
+  height: 5px;
+  position: absolute;
+  margin-top: 0;
+}
+
+main #secondScreen main .card main {
+  margin-top: 60px;
+}
+
+main #secondScreen main .card main .text {
+  font-family: "SofiaPro";
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+main #secondScreen main .card hr {
+  width: 500px;
+  height: 22px;
+  margin-top: 80px;
+}
+/*# sourceMappingURL=style.css.map */

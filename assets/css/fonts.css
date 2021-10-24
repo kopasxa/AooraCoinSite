@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Black.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RocGrotesk";
+  src: url("../fonts/Roc Grotesk ExtraWide Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RocGrotesk";
+  src: url("../fonts/Roc Grotesk ExtraWide Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProBlack.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProMedium.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../fonts/SofiaProRegular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SofiaProSemi";
+  src: url("../fonts/SofiaProSemiBold.ttf");
+  font-weight: 700;
+}
+/*# sourceMappingURL=fonts.css.map */
