@@ -82,6 +82,12 @@ body {
           justify-content: center;
 }
 
+.justify-content-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .justify-content-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -102,9 +108,17 @@ body {
 }
 
 .linear-gradient-text {
-  background: linear-gradient(157deg, #fa4aff 40%, #01efff);
+  background: linear-gradient(157deg, #fa4aff 30%, #01efff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+  background-size: 150% 100%;
+}
+
+.linear-gradient-text:hover {
+  opacity: .7;
+  background-position-x: 100%;
 }
 
 .circleLinear {
@@ -139,6 +153,15 @@ body {
   margin: 0;
 }
 
+.lighten {
+  mix-blend-mode: lighten;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
 .d-none {
   display: none;
 }
@@ -148,18 +171,23 @@ hr {
 }
 
 /** MAIN **/
-header .logo .logoName a {
+body > .mainHeader {
+  background-color: black;
+  z-index: 100;
+}
+
+body > .mainHeader .logo .logoName a {
   color: #F5F5F5;
   font-family: "RocGrotesk";
   text-decoration: none;
   font-weight: 500;
 }
 
-header .menu .listMenu {
+body > .mainHeader .menu .listMenu {
   list-style: none;
 }
 
-header .menu .listMenu .menuItem {
+body > .mainHeader .menu .listMenu .menuItem {
   font-size: 18px;
   font-family: "SofiaPro";
   font-weight: 700;
@@ -168,45 +196,11 @@ header .menu .listMenu .menuItem {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-main .container {
-  width: 70%;
-}
-
-main #firstScreen .title {
-  margin: 90px 0;
-  font-size: 96px;
-  font-family: "RocGrotesk";
-  font-weight: 600;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-main #firstScreen img {
-  margin: 0 auto;
-  margin-bottom: 90px;
-}
-
-main #secondScreen {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1.46%, #C4C4C4), color-stop(40%, rgba(196, 196, 196, 0)));
-  background: linear-gradient(360deg, #C4C4C4 -1.46%, rgba(196, 196, 196, 0) 40%);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-main #secondScreen .container {
-  width: 83%;
-  margin-right: 7%;
-}
-
-main #secondScreen hr {
-  width: 100%;
-  height: 17px;
-}
-
-main #secondScreen .mainHeader {
+.content .mainHeader {
   padding-bottom: 25px;
 }
 
-main #secondScreen .mainHeader h2 {
+.content .mainHeader h2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -216,7 +210,7 @@ main #secondScreen .mainHeader h2 {
   margin-bottom: 0;
 }
 
-main #secondScreen .mainHeader h1 {
+.content .mainHeader h1 {
   font-family: "RocGrotesk";
   color: #FFFFFF;
   font-size: 60px;
@@ -224,14 +218,14 @@ main #secondScreen .mainHeader h1 {
   margin-bottom: 10px;
 }
 
-main #secondScreen .mainHeader hr {
-  width: 1100px;
-  height: 32px;
+.content .mainHeader hr {
+  width: 1100px !important;
+  height: 32px !important;
   position: absolute;
   left: -20px;
 }
 
-main #secondScreen main .card {
+.content .card {
   background: rgba(181, 181, 181, 0.09);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
@@ -242,35 +236,143 @@ main #secondScreen main .card {
   z-index: 2;
 }
 
-main #secondScreen main .card header h2 {
+.content .card header h2 {
   font-size: 30px;
   font-family: 'ProximaNova';
   font-weight: 700;
   line-height: 45px;
   margin-bottom: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-main #secondScreen main .card header hr {
+.content .card header h2::after {
+  content: '';
+  border-radius: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(15.58%, #00EFFF), color-stop(74.85%, #FA4AFF));
+  background: linear-gradient(270deg, #00EFFF 15.58%, #FA4AFF 74.85%);
+}
+
+.content .card header hr {
   width: 234px;
   height: 5px;
   position: absolute;
   margin-top: 0;
 }
 
-main #secondScreen main .card main {
+.content .card main {
   margin-top: 60px;
 }
 
-main #secondScreen main .card main .text {
+.content .card main .text {
   font-family: "SofiaPro";
   font-size: 24px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-main #secondScreen main .card hr {
+.content .card hr {
   width: 500px;
   height: 22px;
   margin-top: 80px;
+}
+
+.content .container {
+  width: 70%;
+}
+
+.content #firstScreen .title {
+  margin: 90px 0;
+  font-size: 96px;
+  font-family: "RocGrotesk";
+  font-weight: 600;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content #firstScreen img {
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.content #secondScreen {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1.46%, #C4C4C4), color-stop(40%, rgba(196, 196, 196, 0)));
+  background: linear-gradient(360deg, #C4C4C4 -1.46%, rgba(196, 196, 196, 0) 40%);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.content #secondScreen .container {
+  width: 83%;
+  margin-right: 7%;
+}
+
+.content #secondScreen hr {
+  width: 100%;
+  height: 17px;
+}
+
+.content #secondScreen main {
+  margin-bottom: 60px;
+}
+
+.content #secondScreen main aside img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 7%;
+}
+
+.content #thirdSectionDesktop {
+  background: url(../img/backgroundSecond.png) no-repeat center;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  background-position-y: 240vh;
+  background-size: contain;
+}
+
+.content #thirdSectionDesktop section {
+  margin-top: 50px;
+}
+
+.content #thirdSectionDesktop .default {
+  background: rgba(181, 181, 181, 0.09) !important;
+}
+
+.content #thirdSectionDesktop .mainHeader h1.header {
+  margin-right: 10%;
+}
+
+.content #thirdSectionDesktop .mainHeader hr {
+  left: auto;
+  right: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.content #thirdSectionDesktop .card {
+  background: rgba(181, 181, 181, 0.5);
+}
+
+.content #thirdSectionDesktop .card main.wrapper {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.content #thirdSectionDesktop .card main.wrapper::after {
+  content: '';
+  border-radius: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(15.58%, #00EFFF), color-stop(74.85%, #FA4AFF));
+  background: linear-gradient(270deg, #00EFFF 15.58%, #FA4AFF 74.85%);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,64 @@
+@media screen and (max-width: 1200px) {
+  .direction-reverse-column-1024 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #secondScreen .mainHeader hr {
+    left: auto !important;
+    right: 10%;
+  }
+  #secondScreen main {
+    margin-top: 100px;
+  }
+  #secondScreen main .card {
+    margin-top: 390px;
+  }
+  #secondScreen main aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #secondScreen main aside img {
+    top: auto !important;
+    right: auto !important;
+    margin-right: 0 !important;
+  }
+  .mainHeader nav .listMenu .menuItem {
+    margin-left: 2em !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mainHeader nav .listMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .d-none-mobile {
+    display: none;
+  }
+  .topLeft {
+    right: 91% !important;
+    top: 350px !important;
+    width: 263px !important;
+    height: 263px !important;
+  }
+  .rightMiddle {
+    right: 3% !important;
+    left: auto !important;
+    width: 168px !important;
+    height: 168px !important;
+    top: 43%;
+    bottom: auto !important;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;

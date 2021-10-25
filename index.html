@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -15,13 +16,13 @@
 </head>
 
 <body>
-    <div class="loader done d-flex justify-content-center align-center animate__animated">
+    <!-- <div class="loader done d-flex justify-content-center align-center animate__animated">
         <div class="d-flex direction-column justify-content-center">
             <h1 class="animate__animated animate__flash">AOORA</h1>
             <p class="animate__animated animate__flash d-flex justify-content-center">Loading...</p>
         </div>
-    </div>
-    <header>
+    </div> -->
+    <header class="mainHeader sticky">
         <div class="container">
             <div class="d-flex justify-content-between align-center ">
                 <div class="logo d-flex align-center ">
@@ -30,17 +31,17 @@
                 </div>
                 <nav class="menu animate__backInDown">
                     <ul class="listMenu d-flex ">
-                        <li class="menuItem linear-gradient-text"><a href="/">home</a></li>
-                        <li class="menuItem linear-gradient-text"><a href="#about">about us</a></li>
-                        <li class="menuItem linear-gradient-text"><a href="#roadMap">road map</a></li>
-                        <li class="menuItem linear-gradient-text"><a href="#news">news</a></li>
-                        <li class="menuItem linear-gradient-text"><a href="#tokenomics">tokenomics</a></li>
+                        <li class="menuItem"><a href="/" class="linear-gradient-text">home</a></li>
+                        <li class="menuItem"><a href="#about" class="linear-gradient-text">about us</a></li>
+                        <li class="menuItem"><a href="#roadMap" class="linear-gradient-text">road map</a></li>
+                        <li class="menuItem"><a href="#news" class="linear-gradient-text">news</a></li>
+                        <li class="menuItem"><a href="#tokenomics" class="linear-gradient-text">tokenomics</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
+    <main class="content">
         <section id="firstScreen">
             <div class="container">
                 <div class="d-flex direction-column">
@@ -56,19 +57,18 @@
                     <h1>COMMUNITY</h1>
                     <hr class="linear-gradient">
                 </header>
-                <main class="d-flex align-center justify-content-between">
+                <main class="d-flex align-center justify-content-between direction-reverse-column-1024">
                     <section>
-                        <div class="circleLinear" style="width: 256px; height: 256px; right: 35%; top: 288px;"></div>
-                        <div class="circleLinear"
+                        <div class="circleLinear topLeft" style="width: 256px; height: 256px; right: 35%; top: 288px;"></div>
+                        <div class="circleLinear d-none-mobile"
                             style="width: 216px; height: 216px; left: 268px; bottom: 328px; filter: blur(11px);"></div>
-                        <div class="circleLinear"
+                        <div class="circleLinear d-none-mobile"
                             style="width: 304px; height: 304px; left: 376px; bottom: 128px; filter: blur(11px);"></div>
                         <div class="card">
                             <div class="circleLinear" style="width: 35px; height: 35px; top: 42px; left: 39px;"></div>
                             <header>
                                 <h2>WELCOME TO OUR <br>
                                     CRYPTO FAMILY</h2>
-                                <hr class="linear-gradient">
                             </header>
                             <main>
                                 <p class="text">Here we follow the latest trends in crypto and together we create one
@@ -84,10 +84,93 @@
                     </aside>
                 </main>
             </div>
-            <div class="circleLinear" style="width: 96px; height: 96px; left: 152px; bottom: 88px;"></div>
-            <div class="circleLinear" style="width: 192px; height: 192px; right: 40%; bottom: 32px;"></div>
-            <div class="circleLinear" style="width: 96px; height: 96px; right: 122px; bottom: 40px; z-index: 2;"></div>
-            <hr class="linear-gradient">
+            <div class="circleLinear rightMiddle" style="width: 96px; height: 96px; left: 152px; bottom: 88px;"></div>
+            <div class="circleLinear leftBottom" style="width: 192px; height: 192px; right: 40%; bottom: 32px;"></div>
+            <div class="circleLinear rightBottom" style="width: 96px; height: 96px; right: 122px; bottom: 40px; z-index: 2;"></div>
+            <hr class="linear-gradient" style="border-radius: 0;">
+        </section>
+        <section id="thirdSectionDesktop">
+            <div class="container">
+                <header class="mainHeader">
+                    <h1 class="d-flex justify-content-right header">HISTORY</h1>
+                    <hr class="linear-gradient">
+                </header>
+                <section class="d-flex justify-content-between align-center">
+                    <div class="card default">
+                        <header>
+                            <h2>AOORA</h2>
+                        </header>
+                        <main class="wrapper">
+                            <h2>Prologue:</h2>
+                            <p class="text">The test of man on the planet "Ao" was to immerse him in the astral world and separate his body from his aura, splitting the latter into 7 parts, to reboot his consciousness through forgetting the past and himself. A man who was able to pass the test became One, knowing the universe and gaining the power to change the world. Observers watch the test, and the purified aura is thrown onto an uninhabited planet.</p>
+                        </main>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/auraFirstBlock.png" alt="">
+                    </div>
+                </section>
+                <section class="d-flex justify-content-between align-center">
+                    <img src="assets/img/auraSecondBlockBackground.png" alt="" style="position: absolute; left: 80px">
+                    <div class="card">
+                        <header>
+                            <h2>Chapter One - The Fall.</h2>
+                        </header>
+                        <main class="wrapper">
+                            <p class="text">A terrible and growing roar rolled across the sky. It was neither a storm nor thunder, a white ice asteroid was falling from the opening sky onto the lifeless planet. As soon as it touched the surface, a bright explosion illuminated the wasteland, and dust, sand, and small grains of ice rose into the air, forming an impenetrable and dense cloud.</p>
+                            <p class="text">A few days passed, the effects of the collision subsided and a white fog hung over the place of the asteroid's fall, which, violating all the laws of physics, did not disappear with the onset of noon.</p>
+                        </main>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/auraSecondBlock.png" alt="">
+                    </div>
+                </section>
+                <section class="d-flex justify-content-between align-center">
+                    <img src="assets/img/auraThirdBlockBackground.png" alt="" style="position: absolute; left: 80px; mix-blend-mode: color-dodge;">
+                    <div class="card">
+                        <header>
+                            <h2>Chapter Two - Awareness.</h2>
+                        </header>
+                        <main class="wrapper">
+                            <p class="text">Months passed, but the white mist never disappeared. On the contrary, it seemed to have become even thicker, and waves began to roll on its surface, as if on the surface of the sea. From a distance one could think it was the wind moving the surface, but it was calm on the wasteland, and the cause of the inexplicable phenomenon was the fog itself. With each new movement the phrases echoed in it: "Who am I? Am I human? Am I Aura? Do I exist?" As time passed, the phrases formed into sentences, sentences into memories, memories into awareness.</p>
+                        </main>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/auraThirdBlock.png" alt="" class="lighten">
+                    </div>
+                </section>
+                <section class="d-flex justify-content-between align-center" style="position: relative;">
+                    <div class="card">
+                        <header>
+                            <h2>Chapter Three - The Way</h2>
+                        </header>
+                        <main class="wrapper">
+                            <p class="text">The mist in the desert began to shrink, shrinking in physical size and taking on a human-like shape. Soon the process was over and a particle of aura, which on "Ao" was called: "White light", and resembled a human appearance, was hovering over the surface of the wasteland.</p>
+                            <p class="text">The observers rejoiced, the first hardest step had been taken, for out of nothing a mind appears. So another mind will gain power, freed from its shackles.</p>
+                            <p class="text">"White Light" looked around, swung to one side, to the other, and lifted his head up to see the great and endless starry sky. Somewhere out there, thousands of light-years away, were the shards of shattered aura: Red, Orange, Yellow, Green, Blue, Blue, Purple. He remembered that he had to pick up the shards in strict order, or else he would risk returning to his home planet and starting the journey all over again. "White Light" flickered, letting him know that he remembered himself completely and rushed into endless space towards the stars, in search of Aura particles, leaving behind his world - past and future at the same time.</p>
+                            <p class="text">The red star gave physical power, turning the glow red. The orange star gave a mental star, turning the luminescence orange, and so step by step the Aura, formerly white mist and then "White Light," gained new power, and color.</p>
+                            <p class="text">But the main test lay ahead: having found all the lost light, the Aura was to become black light, absorbing all the good and evil of the world within itself, to become everything and nothing at the same time. To become a raging wind and a quiet backwater on the edge of the coast.</p>
+                        </main>
+                    </div>
+                    <div class="image d-flex direction-column">
+                        <img src="assets/img/auraFourthBlockFirst.png" alt="" class="lighten" style="position: absolute; top: 10%; right: -15%;">
+                        <img src="assets/img/auraFourthBlockSecond.png" alt="" class="lighten" style="position: absolute; bottom: 0; right: -10%;">
+                    </div>
+                </section>
+                <section class="d-flex justify-content-between align-center" style="position: relative;">
+                    <img src="/assets/img/auraFourthBlockBackground.png" alt="" class="lighten" style="position: absolute; left: -15%;">
+                    <div class="card">
+                        <header>
+                            <h2>Chapter Four - The One</h2>
+                        </header>
+                        <main class="wrapper">
+                            <p class="text">It was night when the sky over the planet <b>"Ao"</b> was illuminated with all the colors of the rainbow, the bright light woke up the inhabitants of the planet, and coming out into the street they saw a man, hovering over the roofs of houses, wrapped in the iridescent rainbow light aura, it was a man split into parts many years ago, he passed all the tests and became <b>"One"</b>.</p>
+                        </main>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/auraFifthBlock.png" alt="" >
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
